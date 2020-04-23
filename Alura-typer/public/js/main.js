@@ -2,6 +2,10 @@
 var tempoInicial =  $("#tempo-digitacao").text();
 var campo = $(".campo-digitacao");
 
+$(".tooltip").tooltipster({
+    trigger: "custom"
+});
+
 $(document).ready(function(){
 
     atualizaTamanhoFrase();
@@ -9,6 +13,11 @@ $(document).ready(function(){
     inicializaCronometro();
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
+    atualizaPlacar();
+    $("#usuarios").selectize({
+        create: true,
+        sortField: 'text'
+    });
 
 });
 
@@ -20,6 +29,13 @@ function atualizaTamanhoFrase() {
     var numPalavras = frase.split(" ").length; //função split separa com o elemento que eu coloco dentro
     var tamanhoFrase = $("#tamanho-frase"); //ta achando o lugar desse id
     tamanhoFrase.text(numPalavras); //altera o id
+
+}
+
+function atualizaTempoInicial(tempo) {
+
+    tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
 
 }
 
@@ -41,9 +57,9 @@ function inicializaContadores() {
 
 function inicializaCronometro() {
 
-    var tempoRestante = $("#tempo-digitacao").text();
     //focus->quando entra no campo para digitar
     campo.one("focus", function(){
+        var tempoRestante = $("#tempo-digitacao").text();
         var cronometroId = setInterval(function(){
             tempoRestante--;
             $("#tempo-digitacao").text(tempoRestante);
@@ -58,8 +74,8 @@ function inicializaCronometro() {
 
 function inicializaMarcadores() {
 
-    var frase = $(".frase").text();
     campo.on("input", function() {
+        var frase = $(".frase").text();
         var digitado = campo.val();
         var comparavel = frase.substr(0 , digitado.length);
 

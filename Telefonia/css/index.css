@@ -1,0 +1,214 @@
+*{
+	box-sizing: border-box;
+ }
+
+header{
+	background-color: #054A91;
+	height: 9em;
+	color: #FFF;
+	margin-bottom: 1em;
+	font-family: Nunito;
+}
+
+header h1{
+	font-size: 3em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;	
+}
+
+.imagem-titulo {
+	width: 45px;
+	position: absolute; 
+	left: 35px; /* posiciona a 90px para a esquerda */ 
+	top: 2px; /* posiciona a 70px para baixo */
+}
+
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.container1 {
+	width: 80%;
+	height: 100%;
+	margin: 10% auto;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.container h1, img {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #DAE3ED;
+}
+
+main {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.tituloEBotao {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bto-principal {
+	margin-left: 40.5em;
+}
+
+
+
+section{
+	margin: 2em 0;
+	overflow: hidden;	
+}
+
+section h2{
+	font-size: 1.5em;
+	display: block;
+	font-family: Nunito;
+	margin-bottom: 30px;
+	margin: 5px;
+	font-size: 1.5em;
+	display: inline;
+}
+
+
+td {
+	padding: 1em;
+	margin: 1em 2em;
+	border-top: 2px solid #1D1D1D;
+	text-align: center;
+	font-family: Nunito;
+}
+
+th {
+	padding: 1em;
+	margin: 10px;
+	text-align: center;
+	font-family: Nunito;
+}
+
+table{
+	width: 100%;
+	margin : auto auto;
+    table-layout: auto;
+	border: 1px solid #1D1D1D; /*tem que mudar a cor*/
+}
+
+
+.img-editar {
+	width: 10em;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 1px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #1D1D1D;
+	background-color: #DAE3ED;
+	border-color: #04324c;
+	width: 20%;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+a {
+	color: #1D1D1D;
+	text-decoration:none;
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+footer {
+	background-color: #054A91;
+	height: 6em;
+	color: #FFF;
+	margin-bottom: 1em;
+	font-family: Roboto;
+}
+
+.container2 {
+	height: 10em;
+  	display: flex;
+  	align-items: center;
+	justify-content: center;
+	background-color: #054A91;
+}
+
+.container2 p {
+	margin: 0
+}
+
+.formularios {
+    margin-left: 43%; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form {
+    display: inline;
+}
+
+.formParte  {
+    display: inline;
+    justify-content: center;
+}
+
+fieldset {
+    display: inline;
+    margin: 0 0 0 0;
+}
+
+.legenda {
+    margin-bottom: 10px;
+}
+
+.input {
+    display: inline;
+}
+
+.input-padrao {
+    display: inline;
+    margin-bottom: 20px;
+    padding: 8px 5px;
+    width: 15em;
+}

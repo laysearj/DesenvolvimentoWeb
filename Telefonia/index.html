@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Principal</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>
+					M
+					<img  class="imagem-titulo" src="img/component (1).png" alt="Celular">
+				</h1>
+			</div>
+		</header>
+
+		<main>
+			<section class="container1">
+					
+					<div class="tituloEBotao">
+
+						<h2>Produtos</h2>
+						
+						<button class="bto-principal">
+							ADICIONAR
+						</button>
+						
+					</div>			
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Codigo</th>
+							<th>Modelo</th>
+							<th>Preço</th>
+							<th>Marca</th>
+							<th>Cor</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-celulares">
+						<tr class="celular" >
+							<td class="info-codigo">23856234</td>
+							<td class="info-modelo">XT2041-1</td>
+							<td class="info-preco">R$ 1.407,12</td>
+							<td class="info-marca">Motorola</td>
+							<td class="info-cor">Preto</td>
+						</tr>
+
+						<tr class="celular" >
+							<td class="info-codigo">23856233</td>
+							<td class="info-modelo">XT2041-1</td>
+							<td class="info-preco">R$ 1.207,12</td>
+							<td class="info-marca">Motorola</td>
+							<td class="info-cor">Preto</td>
+						</tr>
+
+						<tr class="celular" >
+							<td class="info-codigo">23856233</td>
+							<td class="info-modelo">XT2041-1</td>
+							<td class="info-preco">R$ 1.007,12</td>
+							<td class="info-marca">Motorola</td>
+							<td class="info-cor">Preto</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<div class="formularios">
+
+				<div class="formParte">
+
+					<form id="form-adicona">
+
+						<label for="codigo">Codigo</label> <br>
+						<input type="codigo" id="codigo" class="input-padrao" required placeholder="23856234">
+						<br>
+						<br>
+
+						<label for="modelo">Modelo</label> <br>
+						<input type="modelo" id="modelo" class="input-padrao" required placeholder="XT2041-1">
+						<br>
+						<br>
+
+						<label for="cor">Cor</label> <br>
+						<input type="cor" id="cor" class="input-padrao" required placeholder="Preto">
+						<br>
+						<br>
+
+						<label for="preco">Preço</label> <br>
+						<input type="preco" id="preco" class="input-padrao" required placeholder="R$ 1.407,12">
+						<br>
+						<br>
+
+						<label for="marca">Marca</label> <br>
+						<input type="marca" id="marca" class="input-padrao" required placeholder="Motorola">
+						<br>
+						<br>
+
+						<label for="data">Inicio das vendas</label> <br>
+						<input type="data" id="data" class="input-padrao" required placeholder="15/03/2020">
+						<br>
+						<br>
+					
+						<label for="data">Fim das vendas</label> <br>							
+						<input type="data" id="data" class="input-padrao" required placeholder="15/03/2020">
+
+					</form>
+
+				</div>
+
+
+			</div>
+
+			<div>
+				<button id="adicionar-cadastro" class="bto-principal">
+					ADICIONAR
+				</button>
+			</div>
+
+
+		</main>
+
+		<footer class="rodape">
+
+			<div class="container2">
+				<p>
+					© Copyright 2020 - Melhor Celular - Todos os direitos reservados à Melhor Celular LTDA.
+				</p>
+			</div>
+	
+		</footer>
+
+		<script src="js/cadastro.js"></script>
+
+	</body>
+</html>
