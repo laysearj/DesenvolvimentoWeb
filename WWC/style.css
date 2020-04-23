@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    background: linear-gradient(180deg, #2F4076 0%, rgba(47, 64, 118, 0.84) 100%);
+    text-align: center;
+}
+.logo {
+
+    width: 120px;
+}
+
+.sub-head {
+    margin: 0 100px 0;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-top: 78px;
+    margin-left: 70px;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    margin: 5px;
+    list-style: none;    
+    justify-content: flex-end;
+}
+
+.link-txt {
+    color: #54D1BB;
+    margin: 87px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:hover {
+    color: white;
+}
+
+.middle-header{
+    display: flex;
+    padding-top: 10px;
+    margin: 0 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.header-title {
+    font-size: 60px;
+    color: white;
+    /*margin-left: 147px;*/
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.header-title-strong {
+    color:#54D1BB;
+}
+
+.woman-image {
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-right: 180px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+
+.bottom-header {
+    font-size: 18px;
+    padding-top: 10px;
+    margin: 0 100px 0;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 23px;
+}
+
+/*main*/
+
+.projects {
+    background: rgba(229, 229, 229, 0.71);
+    text-align: center;
+}
+
+.row {
+    margin: 0 100px 0;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.title2 {
+    color:#2F4076; 
+    font-size: 45px;
+}
+
+.card {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: start;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.card-description {
+    font-style: regular;
+    font-size: 16px;
+    fill: Solid;
+    color: #3E3B3B;
+    margin:10px;
+    text-align: start;
+}
+
+.card-title1 {
+    margin: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2F4076;
+    text-align: start;
+}
+
+.card-title2 {
+    margin: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #54D1BB;
+    text-align: start;
+}
+
+.card-title3 {
+    margin: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #F1C205;
+    text-align: start;
+}
+
+.card-title4 {
+    margin: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: boldx;
+    line-height: 23p;
+    font-size: 20px;
+    color: #3D1E69;
+    text-align: start;
+}
+
+/*footer*/
+
+.contact {
+    height: 416px;
+    background: linear-gradient(180deg, #46BEB2 0%, #3A7C95 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 56px;
+    line-height: 66px;
+}
+
+.email {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.description-end {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #3E3B3B;
+}
+
+.end {
+    height: 140px;
+    background: rgba(62, 59, 59, 0.88);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/*Falta colocar as listas uma abaixo da outra em flexbox*/
+
+
