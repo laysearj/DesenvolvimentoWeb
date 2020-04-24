@@ -1,9 +1,10 @@
 class Negociacao {
 
-    constructor() {
-        this._data = new Date();
-        this._quantidade = 1;
-        this._valor = 0.0;
+    constructor(data, quantidade, valor) {
+
+        this._data = new Date(data.getTime());
+        this._quantidade = quantidade;
+        this._valor = valor;
 
         //congelando o construtor p/ não mudar o valor
         Object.freeze(this); 
@@ -11,8 +12,8 @@ class Negociacao {
     }
 
 
-//acesso de leitura acesso pelo proprio nome 
-//ex: get volume() = volume;
+    //acesso de leitura acesso pelo proprio nome 
+    //ex: get volume() = volume;
 
     get volume() {
 
