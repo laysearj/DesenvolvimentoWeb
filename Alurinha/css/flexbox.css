@@ -118,6 +118,7 @@
 }
 
 /*video*/
+/*
 
 .videoSobre .container {
     display: flex;
@@ -133,9 +134,10 @@
 
 .videoSobre-sobre-list {
     flex-grow: 1; /*ele divide o espaço vazio entre os flex-itens*/
-}
+/*}
 
 .videoSobre-video {
     flex-grow: 1;
     flex-shrink: 2; /*para diminuir 2x mais enquanto diminui a tela*/
-}
+/*}
+*/
